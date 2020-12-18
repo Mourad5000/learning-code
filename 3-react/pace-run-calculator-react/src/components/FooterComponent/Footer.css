@@ -1,0 +1,29 @@
+.footer {
+  background: linear-gradient(90deg, #1c3643, #273b47 13%, #00adb5);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 41px;
+}
+
+footer p {
+  color: #eeeeee;
+}
+
+footer img {
+  height: 26px;
+  margin: 5px;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+hr {
+  border-top: 1px solid rgba(238, 238, 238, 1);
+}

@@ -1,0 +1,223 @@
+body {
+  font-family: "Mulish", sans-serif;
+  background: linear-gradient(#21c08b, #ab88ff);
+  height: 100%;
+  margin: 0px;
+  color: white;
+}
+
+/* --------HEADER-------------*/
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between; /*nos pone un espacio enmedio de los elementos*/
+  align-items: center;
+  background: #21c08b;
+}
+.header__img {
+  width: 70px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu ul {
+  display: none; /*para que no se vea de primeras */
+  list-style: none; /* para que se quiten los puntitos dde delante de lista*/
+  padding: 0px; /*mete el div en una caja y como mas grande sea el padding mas se reduce la caja*/
+  position: absolute; /*para moverlo como queramos en relacion al cuadro */
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px; /*arriba abajo derecha izquierda*/
+}
+.header__menu:hover ul,
+ul:hover {
+  /*cuando haga hover (cuando pongo el puntero encima) a header__menu i ul hara lo que hay dentro*/
+  display: block; /*cuando hago el hover desbloquea el menu y lo muestra*/
+}
+.header__menu li {
+  margin: 3px -35px; /*cuando se ponen dos el primero es para el top i el bottom i el segundo para el left y para el right*/
+}
+.header__menu li a {
+  color: white;
+  text-decoration: none; /*Para quitar el subrayado*/
+}
+
+.header__menu li a:hover {
+  text-decoration: underline; /*cuando poengo el puntero encima que se subraye */
+}
+
+.header__menu--profile {
+  margin-right: 77px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__menu--profile p {
+  margin-top: 30px;
+  color: white;
+}
+
+/*---------BUSCADOR DE CONTENIDO----------*/
+.main {
+  height: 100px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.main__tittle {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.main__input {
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+  background-color: rgba(64, 210, 167, 0.5);
+  margin: 0;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-22%);
+  outline: none;
+  border: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.footer {
+  background-color: #ab88ff;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/*----------CSS CARROUSSEL */
+.carousel {
+  width: 100%; /*que la caja ocupe toda la pantalla*/
+  overflow: scroll; /*que se mueva hacia lateral haciendo scroll*/
+  padding: 30px; /*ya que no empieza pegado a la izquiera*/
+  position: relative; /*todos los elementos se van a ir colocando en base a éste*/
+  overflow-x: hidden;
+}
+.carousel__container {
+  white-space: nowrap; /*deja que se mueva hacia la izquierda aunqe no se ve en la pantalla (por defecto lo que hace html es si no cabe lo pone debajo para que se vea todo en la misma pantalla)*/
+  margin: 70px 0px; /*70 px entre tema i imagenes i imagen i tema*/
+  padding-bottom: 10px; /*para cuando sobresalga una imagen no se corte*/
+}
+.carousel-item {
+  background-color: brown;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block; /*Por defecto esta puesto el display block, lo que hace es poner una cosa encima de la otra. Por eso ponemos este display inline-block, para que nos deje poner uno al lado del otro*/
+  cursor: pointer; /*el cursor pasa de ser una flecha a una mano cuando esta encima del div*/
+  transition: 450ms all; /*Tiempo de la animación */
+  transform-origin: center left; /*Para que no se salga de la pantalla cuando se haga más grande */
+  position: relative;
+}
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(
+    100px,
+    0,
+    0
+  ); /*cuando hagamos hover todos los elementos se desplazan hacia la derecha */
+}
+.carousel__container:hover .carousel-item {
+  opacity: 0.3; /*Cuando estoy encima de un elemento que los demas se vean mas opacos */
+}
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.5); /*cuando se le haga hover se haga más grande */
+  opacity: 1; /*Cuando se haga hover que se quita la opacidad */
+}
+.carousel-item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover; /*Para que la imagen tenga su tamaño original */
+}
+.carousel-item__details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /*Un desvanecido */
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px 10px;
+  position: absolute; /*se pone posicion absoluta para poder moverlo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.carousel-item__details:hover {
+  opacity: 1;
+  color: white;
+}
+.carousel-item__details img {
+  height: 25px;
+}
+
+.carousel-item__details--tittle {
+  font-size: 14px;
+  margin: 0px;
+}
+.carousel-item__details--subtittle {
+  font-size: 10px;
+  margin: 0px;
+}
+
+.h3 {
+  padding-left: 34px;
+  margin-top: 23px;
+  margin-bottom: -77px;
+}
+.Segundoh3 {
+  padding-left: 34px;
+  margin-top: -73px;
+  margin-bottom: -77px;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

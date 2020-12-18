@@ -1,0 +1,116 @@
+body {
+  font-family: "Mulish", sans-serif;
+  background: linear-gradient(#21c08b, #ab88ff);
+  height: 100%;
+  margin: 0px;
+  color: white;
+}
+
+/* --------HEADER-------------*/
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between; /*nos pone un espacio enmedio de los elementos*/
+  align-items: center;
+  background: #21c08b;
+}
+.header__img {
+  width: 70px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu ul {
+  display: none; /*para que no se vea de primeras */
+  list-style: none; /* para que se quiten los puntitos dde delante de lista*/
+  padding: 0px; /*mete el div en una caja y como mas grande sea el padding mas se reduce la caja*/
+  position: absolute; /*para moverlo como queramos en relacion al cuadro */
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px; /*arriba abajo derecha izquierda*/
+}
+.header__menu:hover ul,
+ul:hover {
+  /*cuando haga hover (cuando pongo el puntero encima) a header__menu i ul hara lo que hay dentro*/
+  display: block; /*cuando hago el hover desbloquea el menu y lo muestra*/
+}
+.header__menu li {
+  margin: 3px -35px; /*cuando se ponen dos el primero es para el top i el bottom i el segundo para el left y para el right*/
+}
+.header__menu li a {
+  color: white;
+  text-decoration: none; /*Para quitar el subrayado*/
+}
+
+.header__menu li a:hover {
+  text-decoration: underline; /*cuando poengo el puntero encima que se subraye */
+}
+
+.header__menu--profile {
+  margin-right: 77px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__menu--profile p {
+  margin-top: 30px;
+  color: white;
+}
+/* EMPIEZA EL 404-----------------------*/
+.notFound {
+  height: 487px;
+  display: flex;
+  align-items: center;
+}
+.notFound img {
+  padding-left: 15px;
+  height: 350px;
+  width: 350px;
+}
+.h2 {
+  padding-left: 55px;
+  padding-right: 75px;
+  margin-top: 25px;
+}
+/* EMPIEZA EL FOOTER---------------------*/
+.footer {
+  background-color: #ab88ff;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.a {
+  color: white;
+  text-decoration: none;
+}
+.a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+  .notFound {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

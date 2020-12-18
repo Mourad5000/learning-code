@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="proves.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Controla tu ritmo para no perder ni un segundo!</h3>
+    <div class="form-container">
+      <section class="km">
+        <p>¿Cuánto quieres hacer?</p>
+        <div class="favourites-km">
+          <div class="km-selector">
+            <input type="radio"  name="selector"  id="5k">
+            <label for="5k">5km</label>
+          </div>
+          <div class="km-selector">
+            <input name="selector" type="radio" id="10k" >
+            <label for="10k">10km</label>
+          </div>
+          <div class="km-selector">
+            <input name="selector" type="radio" id="21k">
+            <label for="21k">1/2 Maratón</label>
+          </div>
+          <div class="km-selector">
+            <input type="radio" name="selector" id="42k">
+            <label for="42k">Maratón</label>
+          </div>
+          
+        </div>
+        Otra distancia: <input
+          class="input-distance"
+          type="number"
+          id="distance-km"
+          placeholder="Kilómetros"
+          onclick="if(this.value=='Kilómetros') this.value=''"
+          onblur="if(this.value=='') this.value='Kilómetros'"
+          autocomplete="off"
+          required 
+        />:
+        <input
+          class="input-distance"
+          type="number"
+          id="distance-m"
+          placeholder="Metros"
+          onclick="if(this.value=='Meteos') this.value=''"
+          onblur="if(this.value=='') this.value='Metros'"
+          autocomplete="off"
+          required 
+        />
+      </section>
+      <p>¿Qué tiempo quieres hacer?</p>
+      <section class="time">
+        <input
+          class="input-time"
+          type="number"
+          id="hours"
+          placeholder="Horas"
+          onclick="if(this.value=='Horas') this.value=''"
+          onblur="if(this.value=='') this.value='Horas'"
+          autocomplete="off"
+          required
+        />
+        :
+        <input
+          class="input-time"
+          type="number"
+          id="minutes"
+          placeholder="Minutos"
+          onclick="if(this.value=='Minutos') this.value=''"
+          onblur="if(this.value=='') this.value='Minutos'"
+          autocomplete="off"
+          required
+        />
+        :
+        <input
+          class="input-time"
+          type="number"
+          id="seconds"
+          placeholder="Segundos"
+          onclick="if(this.value=='Segundos') this.value=''"
+          onblur="if(this.value=='') this.value='Segundos'"
+          autocomplete="off"
+          required
+        />
+      </section>
+      <section class="km">
+        <p>¿Cada cuánto te quieres controlar?</p>
+        <input
+          class="input"
+          type="number"
+          id="lap"
+          placeholder="Distancia de vuelta"
+          onclick="if(this.value=='Distancia de vuelta') this.value=''"
+          onblur="if(this.value=='') this.value='Distancia de vuelta'"
+          autocomplete="off"
+          required
+        />
+      </section>
+      <a onclick="resetBoard()" class="button1">Calcula tu ritmo!</a>
+    </div>
+    <div class="container-printer">
+    </div>
+    <script src="myPace.js"></script>
+    <script src="manageBoard.js"></script>
+    
+  </body>
+</html>

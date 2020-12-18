@@ -1,0 +1,17 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.hero {
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero:hover {
+  box-shadow: 0 3px 15px;
+}

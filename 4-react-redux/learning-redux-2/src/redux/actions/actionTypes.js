@@ -1,0 +1,8 @@
+const actionTypes = {
+    LOAD_POKEMONS: "LOAD_POKEMONS",
+    LOAD_POKEMONS_ERROR: "LOAD_POKEMONS_ERROR",
+    INCREMENT_POKEMON_COUNT: "INCREMENT_POKEMON_COUNT",
+    LOAD_USERS: "LOAD_USERS",
+};
+
+export default actionTypes;

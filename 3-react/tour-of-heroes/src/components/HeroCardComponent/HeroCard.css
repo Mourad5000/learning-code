@@ -1,0 +1,32 @@
+.hero-card-container {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 0.25rem;
+}
+
+.hero-card-container:hover,
+.name:hover {
+  color: white;
+  background-color: #123346;
+  text-decoration: none;
+}
+
+.id {
+  background-color: #123346;
+  color: aliceblue;
+  border-radius: 0.25rem;
+  padding: 10px;
+}
+
+.name {
+  background-color: #226388;
+  color: aliceblue;
+  border-radius: 0.25rem;
+  padding: 10px;
+}
+
+.id:hover,
+.name:hover {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,140 @@
+section {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+section h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+section h5 {
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.distance {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-favourites {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.km-selector {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  width: 30%;
+  position: relative;
+}
+
+.entrada-km {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-distance {
+  color: #253e47;
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #00adb5;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 34px;
+  width: 20%;
+}
+
+.input-time {
+  color: #253e47;
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #00adb5;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 0px;
+  padding: 0px 10px;
+  outline: none;
+  height: 34px;
+  width: 29%;
+}
+
+.input {
+  color: #253e47;
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #00adb5;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 34px;
+}
+
+.button1 {
+  background-color: transparent;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #393e46;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #393e46;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button1:hover {
+  color: #00adb5;
+  background-color: transparent;
+  border: 0.1em solid #00adb5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.the-calculator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.timeAcumulator {
+  width: 60%;
+}

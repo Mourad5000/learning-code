@@ -1,0 +1,18 @@
+.footer {
+  background: linear-gradient(90deg, #1c3643, #273b47 13%, #1e5372);
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: aliceblue;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+}

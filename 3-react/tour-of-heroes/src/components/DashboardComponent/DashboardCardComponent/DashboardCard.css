@@ -1,0 +1,14 @@
+.dashboard-card {
+  margin-top: 20px;
+  background-color: #1e5372;
+  padding: 20px;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.dashboard-card:hover {
+  color: white;
+  background-color: #123346;
+  text-decoration: none;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}

@@ -1,0 +1,25 @@
+.characters{
+    height: 100%;
+}
+.detail-card{
+    display: flex;
+    flex-direction: row;
+    background-color: linear-gradient(to right, #d4d3dd, #efefbb);
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 40px;
+    width: 60%;
+}
+
+.detail-image{
+    border-radius: 20px;
+    width: 40%;
+
+}
+
+.detail-info{
+    margin-left: 10px;
+    
+}

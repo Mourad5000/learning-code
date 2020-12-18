@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>Millorar el meu disseny</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__img"
+        src="../Front End Developer/imagenes/logo.png"
+        alt="Logo BikUP"
+      />
+      <div class="header__menu">
+        <div class="header__menu--profile">
+          <img
+            class="header__img"
+            src="./imagenes/profile.png"
+            alt="Foto perfil"
+          />
+          <p>Perfil</p>
+        </div>
+        <ul>
+          <li><a href="/">Cuenta</a></li>
+          <li><a href="/">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+     <!--Empieza el buscador!-->
+    <section class="main">
+      <h2 class="main__tittle">¿Qué quieres ver hoy?</h2>
+      <input class="main__input" type="text" placeholder="Buscar..." onclick="if(this.value=='Buscar...') this.value=''"
+      onblur="if(this.value=='') this.value='Buscar'"/>
+    </section>
+    
+    <!--Empieza el carrousell-->
+    <h3 class="h3">Tendencias</h3>
+    <section class="carousel">
+      <div class="carousel__container">
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../Front End Developer/imagenes/Acción.jpg"
+            alt="Peliculas de Acción"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+                alt="Play"
+              />
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/plus.png"
+                alt="Plus"
+              />
+            </div>
+
+            <p class="carousel-item__details--tittle">
+              Carga contra los corruptos.
+            </p>
+            <p class="carousel-item__details--subtittle">2021 +3 114 minutos</p>
+          </div>
+        </div>
+        <!----------------------------------------------------------->
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../Front End Developer/imagenes/CienciaFicción.jpg"
+            alt="Peliculas de Acción"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+                alt="Play"
+              />
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/plus.png"
+                alt="Plus"
+              />
+            </div>
+
+            <p class="carousel-item__details--tittle">
+              ¿Se nos ha ido de las manos?
+            </p>
+            <p class="carousel-item__details--subtittle">
+              2019 +14 114 minutos
+            </p>
+          </div>
+        </div>
+        <!----------------------------------------------------------->
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../Front End Developer/imagenes/Miedo.jpg"
+            alt="Peliculas de Miedo"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+                alt="Play"
+              />
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/plus.png"
+                alt="Plus"
+              />
+            </div>
+            <p class="carousel-item__details--tittle">No sin mi mascarilla.</p>
+            <p class="carousel-item__details--subtittle">2020 +10 60 minutos</p>
+          </div>
+        </div>
+        <!----------------------------------------------------------->
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../Front End Developer/imagenes/Vintage.jpg"
+            alt="Drama"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+                alt="Play"
+              />
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/plus.png"
+                alt="Plus"
+              />
+            </div>
+
+            <p class="carousel-item__details--tittle">
+              La otra vida de Maryln.
+            </p>
+            <p class="carousel-item__details--subtittle">
+              2019 +16 120 minutos
+            </p>
+          </div>
+        </div>
+
+        <!----------------------------------------------------------->
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../Front End Developer/imagenes/Musical.jpg"
+            alt="Musicales"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+                alt="Play"
+              />
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/plus.png"
+                alt="Plus"
+              />
+            </div>
+
+            <p class="carousel-item__details--tittle">
+              ¿Cómo tener una vida plena?
+            </p>
+            <p class="carousel-item__details--subtittle">2020 +16 60 minutos</p>
+          </div>
+        </div>
+        <!----------------------------------------------------------->
+        <div class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../Front End Developer/imagenes/Documentales.jpg"
+            alt="Musicales"
+          />
+          <div class="carousel-item__details">
+            <div>
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+                alt="Play"
+              />
+              <img
+                src="https://img.icons8.com/flat_round/64/000000/plus.png"
+                alt="Plus"
+              />
+            </div>
+            <!---------------------------------------------------------------->
+
+            <p class="carousel-item__details--tittle">
+              Documental: La vida nómada.
+            </p>
+            <p class="carousel-item__details--subtittle">
+              2018 +16 170 minutos
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!------------------------------------------------------------------------------------------------------------------>
+  </section>
+  <!--Empieza el carrousell-->
+  <h3 class="Segundoh3">Los más vistos</h3>
+  <section class="carousel">
+    <div class="carousel__container">
+      <div class="carousel-item">
+        <img
+          class="carousel-item__img"
+          src="../Front End Developer/imagenes/Acción.jpg"
+          alt="Peliculas de Acción"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+              alt="Play"
+            />
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/plus.png"
+              alt="Plus"
+            />
+          </div>
+
+          <p class="carousel-item__details--tittle">
+            Carga contra los corruptos.
+          </p>
+          <p class="carousel-item__details--subtittle">2021 +3 114 minutos</p>
+        </div>
+      </div>
+      <!----------------------------------------------------------->
+      <div class="carousel-item">
+        <img
+          class="carousel-item__img"
+          src="../Front End Developer/imagenes/CienciaFicción.jpg"
+          alt="Peliculas de Acción"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+              alt="Play"
+            />
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/plus.png"
+              alt="Plus"
+            />
+          </div>
+
+          <p class="carousel-item__details--tittle">
+            ¿Se nos ha ido de las manos?
+          </p>
+          <p class="carousel-item__details--subtittle">
+            2019 +14 114 minutos
+          </p>
+        </div>
+      </div>
+      <!----------------------------------------------------------->
+      <div class="carousel-item">
+        <img
+          class="carousel-item__img"
+          src="../Front End Developer/imagenes/Miedo.jpg"
+          alt="Peliculas de Miedo"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+              alt="Play"
+            />
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/plus.png"
+              alt="Plus"
+            />
+          </div>
+          <p class="carousel-item__details--tittle">No sin mi mascarilla.</p>
+          <p class="carousel-item__details--subtittle">2020 +10 60 minutos</p>
+        </div>
+      </div>
+      <!----------------------------------------------------------->
+      <div class="carousel-item">
+        <img
+          class="carousel-item__img"
+          src="../Front End Developer/imagenes/Vintage.jpg"
+          alt="Drama"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+              alt="Play"
+            />
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/plus.png"
+              alt="Plus"
+            />
+          </div>
+
+          <p class="carousel-item__details--tittle">
+            La otra vida de Maryln.
+          </p>
+          <p class="carousel-item__details--subtittle">
+            2019 +16 120 minutos
+          </p>
+        </div>
+      </div>
+
+      <!----------------------------------------------------------->
+      <div class="carousel-item">
+        <img
+          class="carousel-item__img"
+          src="../Front End Developer/imagenes/Musical.jpg"
+          alt="Musicales"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+              alt="Play"
+            />
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/plus.png"
+              alt="Plus"
+            />
+          </div>
+
+          <p class="carousel-item__details--tittle">
+            ¿Cómo tener una vida plena?
+          </p>
+          <p class="carousel-item__details--subtittle">2020 +16 60 minutos</p>
+        </div>
+      </div>
+      <!----------------------------------------------------------->
+      <div class="carousel-item">
+        <img
+          class="carousel-item__img"
+          src="../Front End Developer/imagenes/Documentales.jpg"
+          alt="Musicales"
+        />
+        <div class="carousel-item__details">
+          <div>
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/play--v1.png"
+              alt="Play"
+            />
+            <img
+              src="https://img.icons8.com/flat_round/64/000000/plus.png"
+              alt="Plus"
+            />
+          </div>
+          <!---------------------------------------------------------------->
+
+          <p class="carousel-item__details--tittle">
+            Documental: La vida nómada.
+          </p>
+          <p class="carousel-item__details--subtittle">
+            2018 +16 170 minutos
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer class="footer"> 
+      <a href="/">Términos de uso</a>
+      <a href="/">Declaración de privacidad</a>
+      <a href="/">Centro de ayuda</a>
+      <a href="/">Copyright @2020 All Rights Reserved</a></footer>
+  </body>
+</html>

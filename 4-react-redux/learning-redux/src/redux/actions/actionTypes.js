@@ -1,0 +1,7 @@
+const actionTypes = {
+  LOAD_POKEMONS: "LOAD_POKEMONS",
+  LOAD_POKEMONS_ERROR: "LOAD_POKEMONS_ERROR",
+  CREATE_POKEMON: "CREATE_POKEMON",
+};
+
+export default actionTypes;

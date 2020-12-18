@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: url(../fondo.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #4eb5f1;
+  text-align: center;
+  transition: all 0.2s;
+}
+.button:hover {
+  background-color: #4095c6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.topHeroes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-name {
+  display: flex;
+  align-items: center;
+  padding: 0.3em 1.2em;
+  margin: 0px 1.3em 0.3em 0;
+  border-radius: 1em;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #e63946;
+  height: 45px;
+}
+
+.hero-name:hover {
+  color: #e63946;
+  background-color: #ffffff;
+}
